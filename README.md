@@ -16,7 +16,6 @@ GitGauge Analytics builds on the core GitGauge CLI — instead of auditing one p
 - [Architecture](#-architecture)
 - [Tech Stack](#️-tech-stack)
 - [Getting Started](#-getting-started)
-- [Usage](#-usage)
 - [What's Next](#-whats-next)
 
 ---
@@ -63,7 +62,6 @@ flowchart TD
     D --> E[percentile ranking]
     D --> F[charts: histogram + bar]
     D --> G[per-person Markdown reports]
-
     H[GitHub search API] --> I[issue-pool analytics]
     I --> F
 ```
@@ -90,27 +88,14 @@ flowchart TD
 ### Installation
 
 ```bash
-git clone https://github.com//gitgauge-analytics.git
-cd gitgauge-analytics
+git clone https://github.com/<your-username>/gitgauge-stage2.git
+cd gitgauge-stage2
 pip install pandas numpy matplotlib
 ```
 
 ### Configuration
 
 Uses the same `GITHUB_TOKEN` environment variable as the core GitGauge CLI.
-
----
-
-## 💻 Usage
-
-```bash
-python3 cohort.py --usernames usernames.txt
-```
-
-`usernames.txt` is one GitHub username per line.
-Loaded 22 profiles (3 failed, skipped)
-Charts saved to output/charts/
-Reports saved to output/reports/
 
 ---
 
