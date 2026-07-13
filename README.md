@@ -88,7 +88,7 @@ flowchart TD
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/gitgauge-stage2.git
+git clone https://github.com/techwithamair/gitgauge-stage2.git
 cd gitgauge-stage2
 pip install pandas numpy matplotlib
 ```
